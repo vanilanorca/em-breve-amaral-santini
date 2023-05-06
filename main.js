@@ -5,7 +5,7 @@ loader.style.display = 'flex';
 
 var timer = setTimeout(function() {
   loader.style.display = 'none';
-}, 2000);
+}, 3000);
 
 content.addEventListener('load', function() {
   clearTimeout(timer);
