@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-image: url(assets/palacio.png);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    overflow: hidden;
+    z-index: -2;
+}
+
+#overlay{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.886);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+}
+
+.content{
+    /* z-index: 9; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#pilaresquerda{
+    position: absolute;
+    left: -11%;
+    height: 110%;
+    top: -10%;
+    z-index: 0;
+}
+
+#pilardireita{
+    position: absolute;
+    right: -11%;
+    height: 110%;
+    top: -10%;
+    z-index: 0;
+}
