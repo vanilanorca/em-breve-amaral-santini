@@ -1,43 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
-    <link rel="stylesheet" href="main.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Jura:wght@300;500&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <div id="loading">
-        <video autoplay loop muted>
-            <source src="assets/logo.mp4" type="video/mp4">
-        </video>
-        <div id="loading-text">
-            <p>Carregando...</p>
-            <div class="cover-loading"></div>
-        </div>
+
+    <nav>
+        <img src="assets/logo-branco.png" alt="">
+        <!-- <ul>
+           Início
+           Sobre nós
+           Áreas de atuação
+           Equipe
+           Artigos
+           Contato
+        </ul> -->
+        <ul class="menu">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Áreas de atuação</a>
+                <ul id="dropdown-menu">
+                    <li><a href="#">Direito Tributário</a></li>
+                    <li><a href="#">Recuperação Judicial</a></li>
+                    <li><a href="#">Direito Societário</a></li>
+                    <li><a href="#">Planejamento Patrimonial e Sucessório</a></li>
+                    <li><a href="#">Direito Civil</a></li>
+                    <li><a href="#">Direito Trabalhista</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Equipe</a></li>
+            <li><a href="#">Artigos</a></li>
+            <li><a href="#">Contato</a></li> 
+        </ul>
+    </nav>
+
+    <div id="banner">
+            <div id="overlay-banner"></div>
+            <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+                <source src="assets/Composição_1_AdobeExpress.mp4" type="video/mp4">
+            </video>
+
+            <img id="logo-banner" src="assets/logo-banner.png" alt="">
+            <!-- <div class="full-logo">
+                <div>
+                    <span class="logo-text">AMARAL</span>
+                    <img src="assets/logo-branco.png" alt="">
+                    <span class="logo-text">SANTINI</span>
+                </div>
+                <div id="horizontal-line"></div>
+                <span class="advogados">ADVOGADOS</span>
+            </div> -->
     </div>
 
-    <div id="container">
-        <div id="overlay"></div>
-        <div class="content">
-            <div>
-                <img class="logo" src="assets/logo-banner.png" alt="">
-                <h1>Em breve ...</h1>
-            </div>
+    <div style="height: 500px"></div>
+
     
-            <div class="pilares">
-                <img src="assets/pilar.png" alt="" id="pilaresquerda">
-                <img src="assets/pilar.png" alt="" id="pilardireita">
-            </div>
-        </div>
-    </div>
-
-    <script src="main.js"></script>
 </body>
 </html>
