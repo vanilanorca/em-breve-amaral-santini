@@ -1,0 +1,90 @@
+.banner{
+    height: fit-content;
+    padding: 40px 0;
+    background: #000000;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.639), rgba(0, 0, 0, 0.895)), url(../assets/sp-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 30px 15px rgb(0, 0, 0);
+}
+.banner img{
+    width: 60%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* SOBRE NOS */
+#sobre-nos .escritorio p{
+    margin-top: 20px;
+}
+
+#sobre-nos .equipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--roboto);
+    margin: 60px 0;
+}
+#sobre-nos .equipe .nome{
+    font-weight: bold;
+    margin-top: 10px;
+}
+#sobre-nos .equipe .area{
+    font-size: 14px;
+    margin-top: 5px;
+}
+#sobre-nos .equipe img{
+    width: 40%;
+    max-width: 200px;
+}
+#sobre-nos #open-popup-sobre{
+    margin-top: 15px;
+    color: #E8E8E8;
+    border: 1px solid #E8E8E8;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 15px;
+    width: fit-content;
+    font-weight: bold;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    font-size: 14px;
+}
+#sobre-nos #open-popup-sobre:hover{
+    color: #0C0C0C;
+    background: #E8E8E8;
+    box-shadow: 5px 5px 20px #000;
+    transition: .2s;
+}
+#sobre-nos #popup-sobre{
+    font-family: var(--roboto);
+    font-weight: bold;
+    line-height: 20px;
+    position: fixed;
+    z-index: 999;
+    top: 25%;
+    background: #ffffffe6;
+    color: #000000;
+    width: 60%;
+    max-width: 700px;
+    max-height: 40%;
+    overflow: auto;
+    padding: 40px;
+    padding-top: 50px;
+    border-radius: 15px;
+    display: none;
+}
+#sobre-nos #popup-sobre p {
+    margin-top: 10px;
+}
+#sobre-nos #close-popup{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 10px;
+}

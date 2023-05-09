@@ -59,12 +59,6 @@
     }
 }
 
-.container{
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .section1{
     display: flex;
     justify-content: space-around;

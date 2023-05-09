@@ -12,6 +12,30 @@ body{
     color: #FFFFFF;
 }
 
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-title{
+    font-size: 18px;
+    margin-bottom: 40px;
+    position: relative;
+    width: fit-content;
+    font-family: 'Julius Sans One', sans-serif;
+    margin-top: 40px;
+}
+.page-title::after{
+    content: '';
+    position: absolute;
+    top: 130%;
+    left: 0;
+    width: 120%;
+    height: 1px;
+    background: #FFF;
+}
+
 /* .menu-desktop */
 .menu-mobile{
     display: none;
