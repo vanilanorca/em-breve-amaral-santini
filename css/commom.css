@@ -22,6 +22,8 @@ body{
     font-size: 18px;
     margin-bottom: 40px;
     position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     font-family: 'Julius Sans One', sans-serif;
     margin-top: 40px;
@@ -129,10 +131,14 @@ body{
     }
     .menu-mobile img:nth-child(1){
         width: 40px;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
         height: fit-content;
     }
     .menu-mobile img:nth-child(2){
         width: 30px;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
         height: fit-content;
     }
     .menu-mobile #menu-open{
@@ -141,6 +147,8 @@ body{
         top: 60px;
         left: 0;
         width: 100%;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
         height: fit-content;
         background: var(--primary-grey);
         z-index: 999;
