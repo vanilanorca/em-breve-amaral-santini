@@ -1,9 +1,27 @@
+
+// LOADING
+var loader = document.getElementsByClassName('loading');
+var content = document.getElementsByClassName("page-content");
+
+loader[0].style.display = 'flex';
+
+var timer = setTimeout(function() {
+  loader[0].style.display = 'none';
+}, 2300);
+
+content[0].addEventListener('load', function() {
+  clearTimeout(timer);
+  loader[0].style.display = 'none';
+});
+
+
+
+// MENU
 var menuToggle = document.getElementById("menu-toggle");
 var menu = document.getElementById("menu-open");
 
 menuToggle.addEventListener("click", function() {
     menu.classList.toggle("show");
-    console.log('teste')
 });
 
 var openDropdownSubmenu = document.getElementById("open-dropdown-mobile");
@@ -21,7 +39,7 @@ $(document).ready(function(){
         loop: true,
         margin: 20,
         dots: false,
-        // autoplay: true,
+        autoplay: true,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
         nav: true,
@@ -30,10 +48,10 @@ $(document).ready(function(){
             0:{
                 items: 1
             },
-            650: {
+            800: {
                 items: 2
             }, 
-            940: {
+            1250: {
                 items: 3
             }
         }

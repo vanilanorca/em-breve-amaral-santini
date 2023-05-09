@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Vinicius Lopes Alves">
-    <meta name="keywords" content="direito, justiça, escritório, advocacia são paulo, advogado são paulo, breno amaral santini, amaral santini adv, amaral santini advogados, escritório amaral santini, advogado breno santini">
-    <meta name="description" content="O escritório Amaral Santini Advogados foi fundado pelo sócio Breno Amaral Santini para ser um lugar diferente de tudo o que já viu em todos os seus anos de experiência. Aqui visamos um lugar onde a excelência no atendimento aos clientes é a prioridade, onde a ética e a transparência são valores inegociáveis e onde a paixão pelo direito é compartilhada por todos os colaboradores.
+    <meta name="keywords"
+        content="direito, justiça, escritório, advocacia são paulo, advogado são paulo, breno amaral santini, amaral santini adv, amaral santini advogados, escritório amaral santini, advogado breno santini">
+    <meta name="description"
+        content="O escritório Amaral Santini Advogados foi fundado pelo sócio Breno Amaral Santini para ser um lugar diferente de tudo o que já viu em todos os seus anos de experiência. Aqui visamos um lugar onde a excelência no atendimento aos clientes é a prioridade, onde a ética e a transparência são valores inegociáveis e onde a paixão pelo direito é compartilhada por todos os colaboradores.
     Temos como principal objetivo prestar serviços de consultoria e assessoria jurídica de forma personalizada e eficiente, buscando sempre soluções jurídicas inovadoras e eficazes para os clientes. Com uma equipe especializada e comprometida, o escritório tem como valores a ética, a transparência e a excelência, buscando sempre atender às necessidades de cada cliente de forma única e personalizada. Seja para questões contenciosas ou consultivas, o escritório está preparado para oferecer um atendimento de alta qualidade e buscar soluções estratégicas para os desafios jurídicos apresentados.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -22,225 +25,254 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/commom.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/loading.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Jura:wght@300;500&display=swap&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    
-
+    <link
+        href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Jura:wght@300;500&display=swap&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
-    <!-- MENU DESKTOP -->
-    <nav class="menu-desktop">
-        <img src="assets/logo-branco.png" alt="Amaral Santini Advogados">
-        <ul class="menu">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="pages/sobre-nos.html">Sobre nós</a></li>
-            <li><span class="areas-de-atuacao">Áreas de atuação</span>
-                <ul id="dropdown-menu">
-                    <li><a href="./pages/areas-de-atuacao/direito-tributario.html">Direito Tributário</a></li>
-                    <li><a href="./pages/areas-de-atuacao/recuperacao-judicial.html">Recuperação Judicial</a></li>
-                    <li><a href="./pages/areas-de-atuacao/direito-societario.html">Direito Societário</a></li>
-                    <li><a href="./pages/areas-de-atuacao/planejamento-patrimonial-sucessorio.html">Planejamento Patrimonial e Sucessório</a></li>
-                    <li><a href="./pages/areas-de-atuacao/direito-civil.html">Direito Civil</a></li>
-                    <li><a href="./pages/areas-de-atuacao/direito-trabalhista.html">Direito Trabalhista</a></li>
-                </ul>
-            </li>
-            <li><a href="./pages/artigos.html">Artigos</a></li>
-            <li><a href="./pages/contato.html">Contato</a></li> 
-        </ul>
-    </nav>
-
-    <!-- MENU MOBILE -->
-    <nav class="menu-mobile">
-        <img src="assets/logo-branco.png" alt="Amaral Santini Advogados">
-        <img src="assets/hamb-menu.png" alt="Menu" id="menu-toggle">
-        <ul class="menu" id="menu-open">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="./pages/sobre-nos.html">Sobre nós</a></li>
-            <li><span id="open-dropdown-mobile">Áreas de atuação</span>
-                <ul id="dropdown-mobile">
-                    <li><a href="./pages/areas-de-atuacao/direito-tributario.html">Direito Tributário</a></li>
-                    <li><a href="./pages/areas-de-atuacao/recuperacao-judicial.html">Recuperação Judicial</a></li>
-                    <li><a href="./pages/areas-de-atuacao/direito-societario.html">Direito Societário</a></li>
-                    <li><a href="./pages/areas-de-atuacao/planejamento-patrimonial-sucessorio.html">Planejamento Patrimonial e Sucessório</a></li>
-                    <li><a href="./pages/areas-de-atuacao/direito-civil.html">Direito Civil</a></li>
-                    <li><a href="./pages/areas-de-atuacao/direito-trabalhista.html">Direito Trabalhista</a></li>
-                </ul>
-            </li>
-            <li><a href="./pages/artigos.html">Artigos</a></li>
-            <li><a href="./pages/contato.html">Contato</a></li> 
-        </ul>
-    </nav>
-
-    <div id="banner">
-        <div id="overlay-banner"></div>
-        <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
-            <source src="assets/Composição_1_AdobeExpress.mp4" type="video/mp4">
+    <div class="loading">
+        <video autoplay loop muted>
+            <source src="assets/loading-logo.mp4" type="video/mp4">
         </video>
-
-        <img id="logo-banner" src="assets/logo-banner.png" alt="Amaral Santini Advogados">
+        <div class="loading-text">
+            <p>Carregando...</p>
+            <div class="cover-loading"></div>
+        </div>
     </div>
 
-    <section class="container section1">
-        <div class="box">
-            <p>Atuante na esfera do direito tributário a mais de 5 anos.</p>
-            <p>+ de 6 anos atuando na área do Direito Tributário</p>
-            <img src="assets/balanca.png" alt="Justiça">
+    <div class="page-content">
+        <!-- MENU DESKTOP -->
+        <nav class="menu-desktop">
+            <img src="assets/logo-branco.png" alt="Amaral Santini Advogados">
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="pages/sobre-nos.html">Sobre nós</a></li>
+                <li><span class="areas-de-atuacao">Áreas de atuação</span>
+                    <ul id="dropdown-menu">
+                        <li><a href="./pages/areas-de-atuacao/direito-tributario.html">Direito Tributário</a></li>
+                        <li><a href="./pages/areas-de-atuacao/recuperacao-judicial.html">Recuperação Judicial</a></li>
+                        <li><a href="./pages/areas-de-atuacao/direito-societario.html">Direito Societário</a></li>
+                        <li><a href="./pages/areas-de-atuacao/planejamento-patrimonial-sucessorio.html">Planejamento
+                                Patrimonial e Sucessório</a></li>
+                        <li><a href="./pages/areas-de-atuacao/direito-civil.html">Direito Civil</a></li>
+                        <li><a href="./pages/areas-de-atuacao/direito-trabalhista.html">Direito Trabalhista</a></li>
+                    </ul>
+                </li>
+                <li><a href="./pages/artigos.html">Artigos</a></li>
+                <li><a href="./pages/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <!-- MENU MOBILE -->
+        <nav class="menu-mobile">
+            <img src="assets/logo-branco.png" alt="Amaral Santini Advogados">
+            <img src="assets/hamb-menu.png" alt="Menu" id="menu-toggle">
+            <ul class="menu" id="menu-open">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="./pages/sobre-nos.html">Sobre nós</a></li>
+                <li><span id="open-dropdown-mobile">Áreas de atuação</span>
+                    <ul id="dropdown-mobile">
+                        <li><a href="./pages/areas-de-atuacao/direito-tributario.html">Direito Tributário</a></li>
+                        <li><a href="./pages/areas-de-atuacao/recuperacao-judicial.html">Recuperação Judicial</a></li>
+                        <li><a href="./pages/areas-de-atuacao/direito-societario.html">Direito Societário</a></li>
+                        <li><a href="./pages/areas-de-atuacao/planejamento-patrimonial-sucessorio.html">Planejamento
+                                Patrimonial e Sucessório</a></li>
+                        <li><a href="./pages/areas-de-atuacao/direito-civil.html">Direito Civil</a></li>
+                        <li><a href="./pages/areas-de-atuacao/direito-trabalhista.html">Direito Trabalhista</a></li>
+                    </ul>
+                </li>
+                <li><a href="./pages/artigos.html">Artigos</a></li>
+                <li><a href="./pages/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div id="banner">
+            <div id="overlay-banner"></div>
+            <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+                <source src="assets/Composição_1_AdobeExpress.mp4" type="video/mp4">
+            </video>
+
+            <img id="logo-banner" src="assets/logo-banner.png" alt="Amaral Santini Advogados">
         </div>
-        
-        <div class="info">
-            <h1>Soluções jurídicas personalizadas e efetivas.</h1>
-            <p>A Amaral Santini Advogados é um “escritório boutique” que preza pela transparência, comprometimento e busca pela solução mais eficiente para cada caso. Oferecemos serviços de consultoria e assessoria jurídica, com forte ênfase na área Tributária e Empresarial, atendendo uma grande variedade de empresas que atuam nos mais diversos segmentos da atividade econômica.</p>
-            <a href="./pages/sobre-nos.html">Saiba mais</a>
-        </div>
-    </section>
 
-    <section class="section2">
-        <h2>Áreas de atuação</h2>
-        <div class="owl-carousel owl-theme">
-            <div class="item block">
-                <div class="titlediv">
-                    <h3>Direito Tributário</h3>
-                </div>
-                <div class="info">
-                    <ul>
-                        <li>Defesa de empresas em processos administrativos e judiciais;</li>
-                        <li>Elaboração de pareceres e consultoria tributária;</li>
-                        <li>Análise de riscos e operações tributárias empresariais;</li>
-                        <li>Recuperação de créditos tributários;</li>
-                        <li>Acompanhamento e defesa em processos de execução fiscal;</li>
-                        <li>Regularização de débitos fiscais.</li>
-                    </ul>
-                    <a href="./pages/areas-de-atuacao/direito-tributario.html">Ver mais</a>
-                </div>
+        <section class="container section1">
+            <div class="box">
+                <p>Atuante na esfera do direito tributário a mais de 5 anos.</p>
+                <p>+ de 6 anos atuando na área do Direito Tributário</p>
+                <img src="assets/balanca.png" alt="Justiça">
             </div>
 
-            <div class="item block">
-                <div class="titlediv">
-                    <h3>Recuperação Judicial</h3>
-                </div>
-                <div class="info">
-                    <ul>
-                        <li>Análise da viabilidade de recuperação judicial;</li>
-                        <li>Reestruturação de dívidas;</li>
-                        <li>Retomada da atividade empresarial;</li>
-                        <li>Elaboração do plano de recuperação judicial;</li>
-                        <li>Representação do devedor na recuperação judicial;</li>
-                        <li>Negociação de acordos de renegociação de dívidas fora da recuperação judicial;</li>
-                    </ul>
-                    <a href="./pages/areas-de-atuacao/recuperacao-judicial.html">Ver mais</a>
-                </div>
+            <div class="info">
+                <h1>Soluções jurídicas personalizadas e efetivas.</h1>
+                <p>A Amaral Santini Advogados é um “escritório boutique” que preza pela transparência, comprometimento e
+                    busca pela solução mais eficiente para cada caso. Oferecemos serviços de consultoria e assessoria
+                    jurídica, com forte ênfase na área Tributária e Empresarial, atendendo uma grande variedade de
+                    empresas que atuam nos mais diversos segmentos da atividade econômica.</p>
+                <a href="./pages/sobre-nos.html">Saiba mais</a>
             </div>
-
-            <div class="item block">
-                <div class="titlediv">
-                    <h3>Direito Societário</h3>
-                </div>
-                <div class="info">
-                    <ul>
-                        <li>Assessoria na constituição de empresas;</li>
-                        <li>Elaboração e revisão de contratos sociai;</li>
-                        <li>Consultoria em operações societárias complexas;</li>
-                        <li>Assessoria em processos de reorganização societária;</li>
-                        <li>Atuação em disputas societárias;</li>
-                        <li>Orientação em questões relacionadas à governança corporativa e compliance empresarial;</li>
-                        <li>Assessoria em processos de due diligence societária.</li>
-                    </ul>
-                    <a href="./pages/areas-de-atuacao/direito-societario.html">Ver mais</a>
-                </div>
-            </div>
-
-            <div class="item block">
-                <div class="titlediv">
-                    <h3>Planejamento Patrimonial e Sucessório</h3>
-                </div>
-                <div class="info">
-                    <ul>
-                        <li>Planejamento patrimonial e sucessório personalizado;</li>
-                        <li>Assessoria na escolha do melhor regime de bens;</li>
-                        <li>Orientação sobre a elaboração de testamentos, doações, inventários e partilhas;</li>
-                        <li>Realização de due diligence para identificação de riscos;</li>
-                        <li>Estruturação de holdings familiares e proteção do patrimônio;</li>
-                        <li>Análise tributária para fins patrimoniais e sucessórios.</li>
-                    </ul>
-                    <a href="./pages/areas-de-atuacao/planejamento-patrimonial-sucessorio.html">Ver mais</a>
-                </div>
-            </div>
-
-            <div class="item block">
-                <div class="titlediv">
-                    <h3>Direito Civil</h3>
-                </div>
-                <div class="info">
-                    <ul>
-                        <li>Elaboração de pareceres e análise de contratos;</li>
-                        <li>Promoção de ações para recuperação de créditos; </li>
-                        <li>Atuação em casos de indenização;</li>
-                        <li>Propriedade intelectual e direitos autorais;</li>
-                        <li>Orientação em questões de responsabilidade civil;</li>
-                        <li>Atuação em casos de direito de família.</li>
-                    </ul>
-                    <a href="./pages/areas-de-atuacao/direito-civil.html">Ver mais</a>
-                </div>
-            </div>
-
-            <div class="item block">
-                <div class="titlediv">
-                    <h3>Direito Trabalhista</h3>
-                </div>
-                <div class="info">
-                    <ul>
-                        <li>Análise de contratos de trabalho;</li>
-                        <li>Orientação em relação aos direitos trabalhistas;</li>
-                        <li>Defesa em processos trabalhistas;</li>
-                        <li>Negociação de acordos extrajudiciais;</li>
-                        <li>Elaboração de pareceres e consultoria jurídica;</li>
-                        <li>Representação em processos de rescisão contratual;</li>
-                        <li>Assessoria em relação à prevenção de litígios trabalhistas;</li>
-                        <li>Cálculo de verbas rescisórias.</li>
-                    </ul>
-                    <a href="./pages/areas-de-atuacao/direito-trabalhista.html">Ver mais</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <a href="pages/artigos.html" class="section3">
-        <section class="container" id="section3container">
-            <p>Confira os artigos ja escritos por nosso Founder Partner, Breno Santini em importantes mídias, como o Estadão e o Conjur.</p>
-            <img src="assets/midjourney-law.png" alt="Leia os Artigos">
         </section>
-    </a>
 
-    <footer>
-        <img src="assets/logo-footer.png" alt="">
-        <div class="info">
-            <div>
-                <h4>Mapa do site</h4>
-                <ul>
-                    <li><a href="pages/sobre-nos.html">Sobre nós</a></li>
-                    <li><a href="pages/areas-de-atuacao.html">Áreas de atuação</a></li>
-                    <li><a href="pages/artigos.html">Artigos</a></li>
-                    <li><a href="pages/contato.html">Contato</a></li>
-                </ul>
+        <section class="section2">
+            <h2>Áreas de atuação</h2>
+            <div class="owl-carousel owl-theme">
+                <div class="item block">
+                    <div class="titlediv">
+                        <h3>Direito Tributário</h3>
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li>Defesa de empresas em processos administrativos e judiciais;</li>
+                            <li>Elaboração de pareceres e consultoria tributária;</li>
+                            <li>Análise de riscos e operações tributárias empresariais;</li>
+                            <li>Recuperação de créditos tributários;</li>
+                            <li>Acompanhamento e defesa em processos de execução fiscal;</li>
+                            <li>Regularização de débitos fiscais.</li>
+                        </ul>
+                        <a href="./pages/areas-de-atuacao/direito-tributario.html">Ver mais</a>
+                    </div>
+                </div>
+
+                <div class="item block">
+                    <div class="titlediv">
+                        <h3>Recuperação Judicial</h3>
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li>Análise da viabilidade de recuperação judicial;</li>
+                            <li>Reestruturação de dívidas;</li>
+                            <li>Retomada da atividade empresarial;</li>
+                            <li>Elaboração do plano de recuperação judicial;</li>
+                            <li>Representação do devedor na recuperação judicial;</li>
+                            <li>Negociação de acordos de renegociação de dívidas fora da recuperação judicial;</li>
+                        </ul>
+                        <a href="./pages/areas-de-atuacao/recuperacao-judicial.html">Ver mais</a>
+                    </div>
+                </div>
+
+                <div class="item block">
+                    <div class="titlediv">
+                        <h3>Direito Societário</h3>
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li>Assessoria na constituição de empresas;</li>
+                            <li>Elaboração e revisão de contratos sociai;</li>
+                            <li>Consultoria em operações societárias complexas;</li>
+                            <li>Assessoria em processos de reorganização societária;</li>
+                            <li>Atuação em disputas societárias;</li>
+                            <li>Orientação em questões relacionadas à governança corporativa e compliance empresarial;
+                            </li>
+                            <li>Assessoria em processos de due diligence societária.</li>
+                        </ul>
+                        <a href="./pages/areas-de-atuacao/direito-societario.html">Ver mais</a>
+                    </div>
+                </div>
+
+                <div class="item block">
+                    <div class="titlediv">
+                        <h3>Planejamento Patrimonial e Sucessório</h3>
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li>Planejamento patrimonial e sucessório personalizado;</li>
+                            <li>Assessoria na escolha do melhor regime de bens;</li>
+                            <li>Orientação sobre a elaboração de testamentos, doações, inventários e partilhas;</li>
+                            <li>Realização de due diligence para identificação de riscos;</li>
+                            <li>Estruturação de holdings familiares e proteção do patrimônio;</li>
+                            <li>Análise tributária para fins patrimoniais e sucessórios.</li>
+                        </ul>
+                        <a href="./pages/areas-de-atuacao/planejamento-patrimonial-sucessorio.html">Ver mais</a>
+                    </div>
+                </div>
+
+                <div class="item block">
+                    <div class="titlediv">
+                        <h3>Direito Civil</h3>
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li>Elaboração de pareceres e análise de contratos;</li>
+                            <li>Promoção de ações para recuperação de créditos; </li>
+                            <li>Atuação em casos de indenização;</li>
+                            <li>Propriedade intelectual e direitos autorais;</li>
+                            <li>Orientação em questões de responsabilidade civil;</li>
+                            <li>Atuação em casos de direito de família.</li>
+                        </ul>
+                        <a href="./pages/areas-de-atuacao/direito-civil.html">Ver mais</a>
+                    </div>
+                </div>
+
+                <div class="item block">
+                    <div class="titlediv">
+                        <h3>Direito Trabalhista</h3>
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li>Análise de contratos de trabalho;</li>
+                            <li>Orientação em relação aos direitos trabalhistas;</li>
+                            <li>Defesa em processos trabalhistas;</li>
+                            <li>Negociação de acordos extrajudiciais;</li>
+                            <li>Elaboração de pareceres e consultoria jurídica;</li>
+                            <li>Representação em processos de rescisão contratual;</li>
+                            <li>Assessoria em relação à prevenção de litígios trabalhistas;</li>
+                            <li>Cálculo de verbas rescisórias.</li>
+                        </ul>
+                        <a href="./pages/areas-de-atuacao/direito-trabalhista.html">Ver mais</a>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h4>Contato</h4>
-                <p><img src="assets/icons/local.png" alt="Endereço"> <span>R. Quinze de Novembro, 200 - Conjunto B - 20º Andar <br> Centro Histórico de São Paulo</span></p>
-                <p><img src="assets/icons/phone.png" alt="Telefone"> <a href="https://wa.me/5511944946298?text=Ol%C3%A1%2C+obrigado+por+entrar+em+contato+com+o+Escrit%C3%B3rio+de+Advocacia+Amaral+Santini+Advogados.+Estamos+dispon%C3%ADveis+para+atend%C3%AA-lo%28a%29+e+prestar+o+melhor+servi%C3%A7o+jur%C3%ADdico+poss%C3%ADvel.+Por+favor%2C+informe-nos+sobre+a+natureza+do+seu+caso+e+teremos+prazer+em+ajud%C3%A1-lo%28a%29.+Retornaremos+o+mais+breve+poss%C3%ADvel.+Obrigado%21" target="_blank">+55 (11) 94494-6298</a></p>
-                <p><img src="assets/icons/mail.png" alt="E-mail"> <a href="mailto:contato@amaralsantini.adv.br">contato@amaralsantini.adv.br</a></p>
+        </section>
+
+        <a href="pages/artigos.html" class="section3">
+            <section class="container" id="section3container">
+                <p>Confira os artigos ja escritos por nosso Founder Partner, Breno Santini em importantes mídias, como o
+                    Estadão e o Conjur.</p>
+                <img src="assets/midjourney-law.png" alt="Leia os Artigos">
+            </section>
+        </a>
+
+        <footer>
+            <img src="assets/logo-footer.png" alt="">
+            <div class="info">
+                <div>
+                    <h4>Mapa do site</h4>
+                    <ul>
+                        <li><a href="pages/sobre-nos.html">Sobre nós</a></li>
+                        <li><a href="pages/areas-de-atuacao.html">Áreas de atuação</a></li>
+                        <li><a href="pages/artigos.html">Artigos</a></li>
+                        <li><a href="pages/contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contato</h4>
+                    <p><img src="assets/icons/local.png" alt="Endereço"> <span>R. Quinze de Novembro, 200 - Conjunto B -
+                            20º Andar <br> Centro Histórico de São Paulo</span></p>
+                    <p><img src="assets/icons/phone.png" alt="Telefone"> <a
+                            href="https://wa.me/5511944946298?text=Ol%C3%A1%2C+obrigado+por+entrar+em+contato+com+o+Escrit%C3%B3rio+de+Advocacia+Amaral+Santini+Advogados.+Estamos+dispon%C3%ADveis+para+atend%C3%AA-lo%28a%29+e+prestar+o+melhor+servi%C3%A7o+jur%C3%ADdico+poss%C3%ADvel.+Por+favor%2C+informe-nos+sobre+a+natureza+do+seu+caso+e+teremos+prazer+em+ajud%C3%A1-lo%28a%29.+Retornaremos+o+mais+breve+poss%C3%ADvel.+Obrigado%21"
+                            target="_blank">+55 (11) 94494-6298</a></p>
+                    <p><img src="assets/icons/mail.png" alt="E-mail"> <a
+                            href="mailto:contato@amaralsantini.adv.br">contato@amaralsantini.adv.br</a></p>
+                </div>
             </div>
+        </footer>
+
+        <div class="developed">
+            <p>Designed and developed by <a href="https://viniciuslopesalves.com.br/" target="_blank">Vinicius Lopes
+                    Alves</a></p>
         </div>
-    </footer>
-
-    <div class="developed">
-        <p>Designed and developed by <a href="https://viniciuslopesalves.com.br/" target="_blank">Vinicius Lopes Alves</a></p>
     </div>
+
+
 
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/owlCarousel/dist/owl.carousel.min.js"></script>
     <script src="main.js"></script>
 </body>
+
 </html>
