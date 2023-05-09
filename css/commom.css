@@ -300,3 +300,10 @@ footer p img{
 .developed a:hover{
     color: #D3A01F;
 }
+
+@media (max-width: 640px) {
+    .developed{
+        padding: 8px;
+        font-size: 7px;
+    }
+}
