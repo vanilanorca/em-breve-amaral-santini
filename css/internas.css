@@ -144,9 +144,9 @@
     width: 80%;
     max-width: 522px;
     margin: 20px auto;
-    padding: 20px 40px;
+    padding: 20px 10%;
     color: #FFFFFF;
-    text-decoration: none
+    text-decoration: none;
 }
 
 #contato div a:hover{
@@ -157,6 +157,7 @@
 
 #contato div a img{
     margin-right: 40px;
+    max-width: 10%;
 }
 
 #contato .local{
@@ -172,4 +173,17 @@
     margin-bottom: 20px;
     display: block;
     max-width: 100%;
+}
+
+@media (max-width: 500px) {
+    #contato div{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    #contato div a, #contato .local{
+        font-size: 12px;
+    }
+    #contato div a img{
+        margin-right: 10px;
+    }
 }
