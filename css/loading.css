@@ -31,7 +31,16 @@
     background-color: #000000;
     width: 110%;
     height: 110%;
-    animation: carregandoappear 4s infinite;
+    -webkit-animation: carregandoappear 4s infinite;
+            animation: carregandoappear 4s infinite;
+}
+
+@-webkit-keyframes carregandoappear{
+    0%{  }
+    25%{ transform: translateX(100%); }
+    50%{ opacity: 0; }
+    75%{ transform: translateX(-10%); opacity: 0; }
+    100%{ transform: translateX(0); opacity: 1; }
 }
 
 @keyframes carregandoappear{
