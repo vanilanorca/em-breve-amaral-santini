@@ -136,12 +136,14 @@ body{
         height: -webkit-fit-content;
         height: -moz-fit-content;
         height: fit-content;
+        max-height: 40px;
     }
     .menu-mobile img:nth-child(2){
         width: 30px;
         height: -webkit-fit-content;
         height: -moz-fit-content;
         height: fit-content;
+        max-height: 25px;
     }
     .menu-mobile #menu-open{
         flex-direction: column;
