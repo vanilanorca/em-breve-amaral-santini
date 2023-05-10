@@ -4,7 +4,6 @@ var loader = document.getElementsByClassName('loading');
 var content = document.getElementsByClassName("page-content");
 
 loader[0].style.display = 'flex';
-// MUDAR PARA FLEX
 
 var timer = setTimeout(function() {
   loader[0].style.display = 'none';
