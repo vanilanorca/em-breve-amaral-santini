@@ -15,11 +15,6 @@ content[0].addEventListener('load', function() {
   loader[0].style.display = 'none';
 });
 
-video.addEventListener('loadeddata', function() {
-    loader[0].style.display = 'none';
-});
-
-
 
 // MENU
 var menuToggle = document.getElementById("menu-toggle");
